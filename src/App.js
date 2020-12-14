@@ -38,13 +38,13 @@ function App() {
       </div>
       <button onClick={ titleChange }>버튼</button>
       <Profile />
-      
+      test
       {
         글제목.map(function(글, i){
           return (
             <div className="list" key={i}>
-              <h3 onClick={ ()=>{ 누른제목변경(i) } }> 
-                { 글 } 
+              <h3 onClick={ ()=>{ 누른제목변경(i) } }>
+                { 글 }
                 <span onClick={ ()=>{upview(i)} }>👍</span> { 따봉[i] }
               </h3>
               <p>2월 17일 발행</p>
@@ -70,11 +70,11 @@ function App() {
 
 
       {
-        modal === true 
+        modal === true
         ? <Modal 글제목={글제목} 누른제목={누른제목}></Modal>
         : null
       }
-      
+
 
     </div>
   );
