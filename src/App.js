@@ -38,7 +38,7 @@ function App() {
       </div>
       <button onClick={ titleChange }>버튼</button>
       <Profile />
-      test
+      
       {
         글제목.map(function(글, i){
           return (
